@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+{% extends "layout.html" %}
+{% block body %}
+<!-- <div class='container'> -->
+	<div class='row'>
+		<div class='twelve columns'>
+			<h3>Markdown Viewer</h3>
+		</div>
+	</div>
+	<div class='row'>
+		<div id='edit-columns' class='six columns'>
+			<!-- <div id='markdown-edit' contenteditable="true"></div> -->
+			<!-- <textarea id='markdown-edit' style="overflow:hidden"></textarea> -->
+			<textarea id='markdown-edit'></textarea>
+			<button id='load-file-meta'>Load Local File</button>
+			<input style="display: none" type="file" id='load-file'>
+		</div>
+		<div class='six columns'>
+			<div id='html-area' class='markdown-body'>
+			</div>
+		</div>
+	</div>
+	<!-- <br> -->
+	<!-- $$ \sum_i^{10} i^2 $$ -->
+<!-- </div> -->
+{% endblock %}
+{% block script_zone %}
+{% endblock %}
